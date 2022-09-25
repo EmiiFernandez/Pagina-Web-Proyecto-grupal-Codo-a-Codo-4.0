@@ -6,7 +6,7 @@
   <title>SEM-GROUP</title>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0",
      maximum-scale="1.0", minimum-scale="1.0">
-  <link rel="stylesheet" href="../TPO-DESA-WEB/css/styles.css">
+  <link rel="stylesheet" href="../TPO_Desarrollo_Web/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +38,7 @@
               <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
               <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
               <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-              <li><a href="https://github.com/shaky4186/TPO-DESA-WEB.git"><i class="fa-brands fa-github"></i></a></li>
+              <li><a href="https://github.com/EmiiFernandez/TPO_Desarrollo_Web.git"><i class="fa-brands fa-github"></i></a></li>
           </ul>
       </div>
 
@@ -49,7 +49,7 @@
         <!-- CARDS HECHAS CON PLANTILLA DE BOOTSTRAP-->
         
           <div class="card1">
-            <img src="../TPO-DESA-WEB/imagenes/Desarrollo Web 2.jpg" class="img-fluid img-limiteAlto" alt="Desarrollo Web">
+            <img src="../TPO_Desarrollo_Web/imagenes/Desarrollo Web 2.jpg" class="img-fluid img-limiteAlto" alt="Desarrollo Web">
             <div class="card-cuerpo">
               <h5 class="card-titulo">Desarrollo Web</h5>
               <p class="card-texto">Podrás crear tu sitio web a partir de un prototipo y subirlo a un servidor. En este curso utilizaras HTML, CSS, JavaScript y herramientas que te ayudarán a mejorar tus práctias, como GIT, GitHub, bootstrap. </p>
@@ -58,7 +58,7 @@
           </div>
 
         <div class="card2">
-            <img src="../TPO-DESA-WEB/imagenes/Python.png" class="img-fluid img-limiteAlto" alt="Python">
+            <img src="../TPO_Desarrollo_Web/imagenes/Python.png" class="img-fluid img-limiteAlto" alt="Python">
             <div class="card-cuerpo">
               <h5 class="card-titulo">Python</h5>
               <p class="card-texto">Aprenderás uno de los lenguajes más populares en estos tiempos. Comenzaremos conociendo sus fundamentos, para luego sumergirnos en módulos, sintaxis y el uso de reglas para crear tus primeras aplicaciones. Para el final del curso podrás desarrollar una aplicación web estilo blog a través de Python en Django Framework.</p>
@@ -67,7 +67,7 @@
           </div>
 
           <div class="card3">
-            <img src="../TPO-DESA-WEB/imagenes/UX-UI.jpg" class="img-fluid img-limiteAlto" alt="Diseño UX-UI">
+            <img src="../TPO_Desarrollo_Web/imagenes/UX-UI.jpg" class="img-fluid img-limiteAlto" alt="Diseño UX-UI">
             <div class="card-cuerpo">
               <h5 class="card-titulo">Diseño UX-UI</h5>
               <p class="card-texto">Aprenderás a transformar los deseos y necesidades de las personas en productos digitales que ofrezcan expriencias memorables.</p>
@@ -76,7 +76,7 @@
         </div>
 
         <div class="card4">
-          <img src="../TPO-DESA-WEB/imagenes/Metodologías agiles.jpg" class="img-fluid img-limiteAlto" alt="Metodologías Ágiles">
+          <img src="../TPO_Desarrollo_Web/imagenes/Metodologías agiles.jpg" class="img-fluid img-limiteAlto" alt="Metodologías Ágiles">
           <div class="card-cuerpo">
               <h5 class="card-titulo">Metodologías Ágiles</h5>
               <p class="card-texto">Aprender estas metodologías te permitirá desarrollar productos y servicios de calidad que respondan a las necesidades del cliente. No solo te perimitirá mejorar el desarrollo de proyectos que precisan rapidez y flexibilidad, sino que, además, descubrirás una filosofía que propone una forma distinta de trabajar y de organizarse.</p>
@@ -90,7 +90,7 @@
           <p>Profe Germán</p>
 
           <!-- Video -->
-          <iframe src="https://www.youtube.com/embed/DFbYBO-1aRM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/DFbYBO-1aRM" class = "videoYoutube" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
           <p>Les presentamos a Germán, profe de Desarrollo Web. Los acompañara a lo largo del curso.</p>
         </div>
@@ -108,17 +108,21 @@
           <p>Contactanos para recibir información!</p>
       </div>
       <div class = "img-area">
-        <img src="../TPO-DESA-WEB/imagenes/SEM-GROUP.png" alt="Contactanos">   
+        <img src="../TPO_Desarrollo_Web/imagenes/SEM-GROUP.png" alt="Contactanos">   
       </div>   
       </div>
       <form class="formulario-area">
         <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <label for="exampleFormControlInput1" class="form-label">Nombre*</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su nombre">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Correo electrónico*</label>
           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
         <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu comentario</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Mensaje" rows="3"></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>

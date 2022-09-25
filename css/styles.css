@@ -4,13 +4,14 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+
 }
 
 :root {
   --background-color-headerFooter: #1C3879;
   --color-headerFooter: #ebebeb;
   --background-color-main: #f6f6f6;
-  --border-cards-section:  8px solid #dcdcdc;
+  --border-cards-section:  solid #dcdcdc;
 }
 
 /*Contenedores Grid*/
@@ -106,6 +107,10 @@
   border: var(--border-cards-section);
 }
 
+.videoYoutube {
+  width: 100%;
+}
+
 .section2 { 
   grid-area: section2; 
   border: var(--border-cards-section);
@@ -114,14 +119,18 @@
 .form-area {
   display: grid; 
   grid-template-columns: 1fr; 
-  grid-template-rows: 0.7fr 1.3fr; 
+  grid-template-rows: 0.5fr 2.0fr; 
   gap: 0px 0px; 
   grid-template-areas: 
     "encabezado-area"
     "formulario-area"; 
-  grid-area: form-area; 
+  grid-area: form-area;
 }
-.formulario-area { grid-area: formulario-area; }
+
+.formulario-area { 
+  grid-area: formulario-area; 
+}
+
 .encabezado-area {
   display: grid; 
   grid-template-columns: 1.4fr 0.6fr; 
@@ -228,28 +237,54 @@
 }
 
 /*FORMULARIO*/
-.form-titulo {
-  display: flex;
-  justify-content: space-around;
+
+.encabezado-area {
   align-items: center;
-  font-size: 1rem;
+}
+
+.form-area {
+  background-color: var(--background-color-main);
+  border: var(--border-cards-section);
+  border-width: var(--border-width);
+
+}
+
+.titulo-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.titulo-area p {
+  margin-bottom: 0;
+}
+
+
+.img-area {
+  text-align: center;
 }
 
 .img-area img {
-  width: 10vw;
+  width: 35%;
 }
 
 .formulario-area {
-  border: 8px solid black;
-  width: 70vw;
-  align-content: center;
+  width: 60vw;
+  text-align: center;
+  justify-self: center;
 }
 
 
-
-
-
 /*FOOTER*/
+
+.footer-area {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color-headerFooter);
+  justify-content: center;
+}
 
 .footer-area p {
   color: var(--color-headerFooter);
@@ -297,11 +332,12 @@
   }
 
   /*Responsive*/
-@media (max-width: 780px) {
+@media (max-width: 1000px) {
   .contenedor-grid {  
     display: grid; 
+    grid-auto-rows: 1fr; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
       "nav-area nav-area"
@@ -311,34 +347,35 @@
       "main-area main-area"
       "section-area section-area"
       "section-area section-area"
+      "form-area form-area"
       "footer-area footer-area"; 
   }
   
-  .nav-area {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "logo-area";
-    grid-area: 1 / 1 / 2 / 3;
+  .nav-area {  
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "logo-area"; 
+    grid-area: nav-area; 
   }
   
   .logo-area { grid-area: logo-area; }
   
   .footer-area { grid-area: 8 / 1 / 9 / 3; }
   
-  .main-area {  display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
+  .main-area {  
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
       "card1"
       "card2"
       "card3"
-      "card4";
-    grid-area: 2 / 1 / 6 / 3;
+      "card4"; 
+    grid-area: main-area; 
   }
 
   .card1, .card2, .card3, .card4 {
@@ -364,6 +401,9 @@
   }
   .section1 { grid-area: section1; }
   .section2 { grid-area: section2; }
+  .form-area { grid-area: form-area; }
+
+  .footer-area { grid-area: footer-area; }
   
 }
     
