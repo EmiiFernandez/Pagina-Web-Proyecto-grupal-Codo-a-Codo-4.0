@@ -104,14 +104,10 @@
 
 .section1 { 
   grid-area: section1; 
-  border: var(--border-cards-section);
-  padding: 2em;
 }
 
 .section2 { 
   grid-area: section2; 
-  border: var(--border-cards-section);
-  padding: 2em;
 }
 
 .form-area {
@@ -125,9 +121,17 @@
   grid-area: form-area; 
 }
 
-.form-texto-area { grid-area: form-texto-area; }
-.img-area { grid-area: img-area; }
-.formulario-area { grid-area: formulario-area; }
+.form-texto-area { 
+  grid-area: form-texto-area; 
+}
+
+.img-area { 
+  grid-area: img-area; 
+}
+
+.formulario-area { 
+  grid-area: formulario-area; 
+}
 
 .footer-area { 
   grid-area:  footer-area; 
@@ -149,7 +153,7 @@
     flex-direction: row;
     list-style: none;   
     justify-content: center;
-    font-size: 1rem; 
+    font-size: 1.2rem; 
     margin-bottom: 0px;
 }
 
@@ -189,7 +193,7 @@
 }
 
 .redes-area i {
-    font-size: 2em;
+    font-size: 1.5em;
     transition: color 1s;
 }
 
@@ -219,7 +223,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3em;
+  padding: 2em;
   background-color: var(--background-color-main);
   border: var(--border-cards-section);
 
@@ -249,9 +253,11 @@
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-}
+  border: var(--border-cards-section);
+  padding: 2em;
+  }
 
-.videoYoutube {
+  .videoYoutube {
   width: 80%;
 }
 
@@ -469,6 +475,10 @@
     font-size: 1.2em;
   }
 
+  .card1, .card2, .card3, .card4 {
+    padding: 1.5em;
+  }
+
   .section1 {
     display: flex;
     flex-direction: column;
@@ -593,13 +603,30 @@
   width: 80%;
 }
 
+.card1, .card2, .card3, .card4 {
+  padding: 1.5em;
+}
+
 .img-limiteAlto {
   width: 100%;
   max-height: 255px;
 }
 
+.videoYoutube {
+  width: 90%;
+}
+
+.section1 p, .section2 p {
+  width: 90%;
+}
+
 .formulario-area {
   place-self: center;
+}
+
+.form-texto-area {
+  text-align: center;
+  width: 100%;
 }
 
 }
