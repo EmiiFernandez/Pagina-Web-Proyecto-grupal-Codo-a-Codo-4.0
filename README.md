@@ -1,4 +1,4 @@
-# TPO_Desarrollo_Web
+# SEM-GROUP
 
 chicas empece a trabajar en la pagina de QUIENES SOMOS me falta desarrollar, mi idea es la siguiente:
 
