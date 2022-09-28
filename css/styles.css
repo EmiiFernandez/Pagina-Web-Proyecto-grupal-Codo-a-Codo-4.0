@@ -629,5 +629,59 @@
   width: 100%;
 }
 
+.container {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "quienes-somos"
+    "mision"
+    "ofrece";
+}
+
+.quienes-somos {  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "img1 parrafo1";
+  grid-area: quienes-somos;
+}
+
+.img1 { grid-area: img1; }
+
+.parrafo1 { grid-area: parrafo1; }
+
+.mision {  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "parrafo2 img2";
+  grid-area: mision;
+}
+
+.parrafo2 { grid-area: parrafo2; }
+
+.img2 { grid-area: img2; }
+
+.ofrece {  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "img3 parrafo3";
+  grid-area: ofrece;
+}
+
+.img3 { grid-area: img3; }
+
+.parrafo3 { grid-area: parrafo3; }
+
+
 }
     
