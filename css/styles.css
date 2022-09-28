@@ -139,6 +139,7 @@
 /*Fin contenedores grid*/  
 
 /*AREA BARRA NAVEGACIÓN*/ 
+
 .nav-responsive-area {
   display: none;
 }
@@ -457,7 +458,7 @@
   }
 
   .burguer-res-area i { 
-    padding-left: 1em;
+    padding-right: 1em;
     font-size: 1.5em;
     color: var(--background-color-main);
   }
@@ -471,7 +472,7 @@
   }
   .carrito-res-area i { 
     color: var(--background-color-main);
-    padding-right: 1.5em;
+    padding-left: 1em;
     font-size: 1.2em;
   }
 
