@@ -166,7 +166,7 @@
 .nav-area ul li a {
     color: var(--color-headerFooter);
     text-decoration: none;
-    padding-right: 5rem;
+    padding-right: 4rem;
     transform: color 1s;
 }
 
@@ -285,6 +285,10 @@
 
 .form-texto-area p {
   margin-bottom: 0;
+}
+
+.btn-primary {
+  width: 10vw;
 }
 
 
