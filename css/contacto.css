@@ -162,6 +162,9 @@
 .btn-primary {
   width: 20vw;
   align-items: center !important;
+  border: 1px solid #006eed;
+  box-shadow: inset 0px 0px 30px -1px #041a5180 !important;
+  text-shadow: 1px 1px 1px #0a0a0a;
 }
 
 
@@ -172,6 +175,8 @@
 .contact-area {
   display: flex;
   flex-direction: column;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .contact-img {
@@ -179,12 +184,9 @@
   padding-right: 2em;
 }
 
-.contact-img img {
-  width: 10vw;
-}
 
 .form-datos {
-  padding-bottom: 2em;
+  padding-bottom: 3em;
 }
 
 .form-logotitle {
@@ -198,8 +200,8 @@
   padding-right: 0.5em;
 }
 
-.form-datos p {
-  margin: 0;
+.form-datos iframe {
+  padding-top: 2%;
 }
 
 .form-datos a {
@@ -271,7 +273,7 @@
     .contenedor-grid {  
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 2.2fr 0.5fr;
+    grid-template-rows: 0fr 5fr 0.5fr;
     grid-auto-columns: 0.5fr;
     grid-auto-rows: 1fr;
     gap: 0px 0px;
@@ -286,12 +288,11 @@
   .nav-area {  
     display: grid;
     grid-template-columns: 1.3fr 0.7fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "logo-area logo-area"
-      "navbar-area redes-area";
+      "logo-area";
     grid-area: nav-area;
   }
   
@@ -305,7 +306,7 @@
   
   .main-area {  display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1.1fr 0.9fr;
+    grid-template-rows: 0.1fr 0.9fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -318,6 +319,42 @@
   
   .contact-area { grid-area: contact-area; }
 
+  .nav-responsive-area { grid-area: 1 / 1 / 2 / 2; }
+  .burguer-res-area { grid-area: 1 / 1 / 2 / 2; }
+  .logo-res-area { grid-area: 1 / 2 / 2 / 3; }
+  .carrito-res-area { grid-area: 1 / 3 / 2 / 4; }
+  
+  .logo-area, .navbar-area, .redes-area, .carrito-compras {
+    display: none;
+  }
+
+  .nav-responsive-area {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .burguer-res-area i { 
+    padding-right: 1em;
+    font-size: 1.5em;
+    color: var(--background-color-main);
+  }
+
+.logo-res-area {
+  text-align: center;
+}
+
+  .logo-res-area img {
+    width: 60%;
+  }
+  .carrito-res-area i { 
+    color: var(--background-color-main);
+    padding-left: 1em;
+    font-size: 1.2em;
+  }
+
   .form-area {
     text-align: center;
     padding: 5em;
@@ -329,8 +366,34 @@
       text-align: center;
     }
 
+    .form-logotitle {
+      justify-content: center;
+    }
+
+    .form-datos iframe {
+      width: 60vw;
+    }
+
   .contact-area {
     align-items: center;
+    padding-top: 0;
   }
+
+  @media (max-width: 600px) {
+    .form-area {
+      padding: 10%;
+    }
+
+    .btn-primary {
+      width: 50%;
+    }
+    
+    .form-datos iframe {
+      width: 80vw;
+    }
+
+    .footer-area p {
+      font-size: 0.8em;
+    }
   }
-  
+}
