@@ -266,7 +266,7 @@
 /*FORMULARIO*/
 
 .form-area {
-  background-color: var(--background-color-main);
+  background-color: #85a8d0;
   border: var(--border-cards-section);
   border-width: var(--border-width);
   padding-top: 0.8em;
@@ -288,7 +288,7 @@
 }
 
 .btn-primary {
-  width: 10vw;
+  width: 15vw;
 }
 
 
@@ -484,6 +484,10 @@
     padding: 1.5em;
   }
 
+  .btn-primary {
+    width: 20vw;
+  }
+
   .section1 {
     display: flex;
     flex-direction: column;
@@ -617,6 +621,10 @@
   max-height: 255px;
 }
 
+.btn-primary {
+  width: 40vw;
+}
+
 .videoYoutube {
   width: 90%;
 }
@@ -634,7 +642,8 @@
   width: 100%;
 }
 
-.container {  display: grid;
+/* .container {  
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
@@ -688,5 +697,5 @@
 .parrafo3 { grid-area: parrafo3; }
 
 
-}
+} */
     
