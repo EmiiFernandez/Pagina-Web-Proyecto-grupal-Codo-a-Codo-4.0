@@ -8,7 +8,9 @@ Permitiendo a SEM-GROUP ser agente de cambio y que, a través de estos cursos, l
 ¿Qué ofrece SEM-GROUP?
 
 •	Cursos con clases prácticas, concretas y especializadas en las áreas de mayor demanda laboral.
+
 •	Diplomas de certificación.
+
 •	Una ruta de aprendizaje ideal para cualquier persona.
 
 
