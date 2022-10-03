@@ -1,7 +1,16 @@
 
-SEM-GROUP somos un grupo de presonas dedicadas a brindar servicios de capacitación en educación IT, con el objetivo acompañar a cada persona que quiera comenzar en el sector IT o quiera mantenerse actualizado.
+SEM-GROUP es una empresa dedicada a brindar servicios de capacitación en educación IT, teniendo como misión, compartir conocimiento, para facilitar a cualquier persona el acceso a educación de alta calidad. Acompañando bien sea, que quiera comenzar en el área de tecnología o quiera mantenerse actualizado.
 
-Nuestros cursos se adaptan a las metodologías y tecnologías necesarias para el mercado laboral actual, los cuales permitirán que, cada alumno, pueda adaptarse al sector IT, el cual es un ambiente de desarrollo y de aprendizaje constante.
+Sus cursos se adaptan a las metodologías y tecnologías necesarias para el mercado laboral actual. Los cuales permitirán que cada alumno, pueda adaptarse rápidamente al mismo, en un entorno de desarrollo y de aprendizaje constante. 
+
+Permitiendo a SEM-GROUP ser agente de cambio y que, a través de estos cursos, los alumnos puedan tener acceso a las herramientas necesarias para mejorar su calidad de vida.
+
+¿Qué ofrece SEM-GROUP?
+
+•	Cursos con clases prácticas, concretas y especializadas en las áreas de mayor demanda laboral.
+•	Diplomas de certificación.
+•	Una ruta de aprendizaje ideal para cualquier persona.
+
 
 Para comenzar el proyecto utilizamos algunos sitios de referencia:
   *https://www.coderhouse.com/
