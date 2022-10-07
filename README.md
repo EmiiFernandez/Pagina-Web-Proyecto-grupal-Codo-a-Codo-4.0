@@ -14,10 +14,16 @@ Permitiendo a SEM-GROUP ser agente de cambio y que, a través de estos cursos, l
 •	Una ruta de aprendizaje ideal para cualquier persona.
 
 
-Para comenzar el proyecto utilizamos algunos sitios de referencia:
-  *https://www.coderhouse.com/
+En el proceso inicial del proyecto utilizamos algunos sitios de referencia, que nos parecieron interesantes al momento del desarrollo de nuestro tema:
+
+  *https://www.coderhouse.com/  
+   Plataforma de elearning que nos muestra un front amigable y con cursos accesibles para los usuarios.
+
   *https://www.udemy.com/es/
+  Plataforma de aprendizaje en línea. Con un componente de busqueda amigable y robusto que permite a los usuarios con palabras simples encontrar el contenido del curso que se adapte a sus necesidades.
+
   *https://www.digitalhouse.com/ar
+  Plataforma con contenido educativo moderno y de alta calidad. Impartiendo habilidades digitales de forma escalable. Para mejorar en el ambito laboral.
   
 Les presentamos nuestro wireframe, realizado en Figma: 
   *https://www.figma.com/file/ZwhxGYu7cYA3oAEsMufKXr/SEM-GROUP?node-id=0%3A1
