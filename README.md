@@ -32,7 +32,7 @@ Restrospectiva:
   1. Comenzar a hacer
     - 
   2. Hacer más
-    - Dayli para el seguimiento del trabajo. 
+    - Daily para el seguimiento del trabajo. 
   3. Continuar haciendo
     - Reuniones semanales.
   4. Hacer menos
