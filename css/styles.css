@@ -643,34 +643,33 @@
 }
 /* Pagina quienes-somos */
 
-/*img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
- 
-  
-
+.section-area {
+  display: flex;
+  margin: 60px;
+  text-align: center;
 }
 
 .contenido {
   display: flex;
-  margin: 60px;
+  
 
 }
 
 .articulos {
 width: 80%;
+text-align: center;
 
 }
 
-.secciones {
-display: flex;
-align-items: center;
-padding: 40px;
 
 
-}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  
+ }
 
 }
     
