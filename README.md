@@ -30,13 +30,13 @@ Les presentamos nuestro wireframe, realizado en Figma:
   
 Restrospectiva:
   1. Comenzar a hacer
-    -
+    - 
   2. Hacer más
-    -
+    - Daily para el seguimiento del trabajo. 
   3. Continuar haciendo
-   -Reuniones semanales
+    - Reuniones semanales.
   4. Hacer menos
-    -
+    - 
   5. Dejar de hacer
     -
     
