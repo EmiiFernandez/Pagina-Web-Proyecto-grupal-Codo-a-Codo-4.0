@@ -28,17 +28,17 @@ En el proceso inicial del proyecto utilizamos algunos sitios de referencia, que 
 Les presentamos nuestro wireframe, realizado en Figma: 
   *https://www.figma.com/file/ZwhxGYu7cYA3oAEsMufKXr/SEM-GROUP?node-id=0%3A1
   
-Restrospectiva:
+Retrospectiva: 
   1. Comenzar a hacer
     - 
   2. Hacer más
-    - Daily para el seguimiento del trabajo. 
+    - Dailys para un mejor seguimiento del trabajo. 
   3. Continuar haciendo
     - Reuniones semanales.
   4. Hacer menos
     - 
   5. Dejar de hacer
-    -
+    - 
     
 Trello:
   *https://trello.com/b/vPpS7trU/tpo-desarrollo-web
