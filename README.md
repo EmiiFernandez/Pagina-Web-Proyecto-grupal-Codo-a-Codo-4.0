@@ -48,6 +48,8 @@ Retrospectiva:
 
   5. Dejar de hacer
 
+    - Eliminar cadenas de email.
+    
     
 Trello:
   *https://trello.com/b/vPpS7trU/tpo-desarrollo-web
