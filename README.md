@@ -29,6 +29,7 @@ Les presentamos nuestro wireframe, realizado en Figma:
   *https://www.figma.com/file/ZwhxGYu7cYA3oAEsMufKXr/SEM-GROUP?node-id=0%3A1
   
 Retrospectiva: 
+
   1. Comenzar a hacer
 
     - Dailys para un mejor seguimiento del trabajo.
@@ -44,7 +45,7 @@ Retrospectiva:
   4. Hacer menos
 
     - Definición de un solo canal de comunicación.
-    
+
   5. Dejar de hacer
 
     
