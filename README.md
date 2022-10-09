@@ -28,7 +28,7 @@ En el proceso inicial del proyecto utilizamos algunos sitios de referencia, que 
 Les presentamos nuestro wireframe, realizado en Figma: 
   *https://www.figma.com/file/ZwhxGYu7cYA3oAEsMufKXr/SEM-GROUP?node-id=0%3A1
   
-Retrospectiva:
+Retrospectiva: 
   1. Comenzar a hacer
     - 
   2. Hacer más
