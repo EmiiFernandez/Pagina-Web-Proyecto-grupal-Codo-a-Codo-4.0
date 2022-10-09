@@ -58,6 +58,15 @@
   grid-area: redes-area; 
 }
 
+.fixed-top img{
+  display: none;
+}
+
+.fixed-top {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .main-area {
   display: grid; 
   grid-auto-rows: 1fr; 
