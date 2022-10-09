@@ -29,16 +29,25 @@ Les presentamos nuestro wireframe, realizado en Figma:
   *https://www.figma.com/file/ZwhxGYu7cYA3oAEsMufKXr/SEM-GROUP?node-id=0%3A1
   
 Retrospectiva: 
+
   1. Comenzar a hacer
-    - 
+
+    - Dailys para un mejor seguimiento del trabajo.
+
   2. Hacer más
-    - Dailys para un mejor seguimiento del trabajo. 
+
+    - Solicitudes para alargar el tiempo de los sprint.
+
   3. Continuar haciendo
+
     - Reuniones semanales.
+
   4. Hacer menos
-    - 
+
+    - Definición de un solo canal de comunicación.
+
   5. Dejar de hacer
-    - 
+
     
 Trello:
   *https://trello.com/b/vPpS7trU/tpo-desarrollo-web
