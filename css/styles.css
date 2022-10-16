@@ -31,10 +31,6 @@
 
 }
 
-.responsive-area {
-  display: none;
-}
-
 .nav-area {  
   display: grid; 
   grid-template-columns: 1fr; 
@@ -57,6 +53,10 @@
 
 .redes-area { 
   grid-area: redes-area; 
+}
+
+.responsive-area {
+  display: none;
 }
 
 .fixed-top img{
