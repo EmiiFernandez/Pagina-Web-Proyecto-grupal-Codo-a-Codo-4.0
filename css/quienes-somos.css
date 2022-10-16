@@ -158,7 +158,7 @@
     min-height: auto;
     display:flex;
     align-items: center;
-    background-color: aliceblue;
+    background-color: azure;
     
    
 }
@@ -166,12 +166,20 @@
 .img {
     
     display: flex;
-    width: 70%;
+    width: 100%;
     max-height: 300px;
-    box-sizing: border-box;
-    
-    
-  }
+    border: #1C3879;
+    margin: auto;
+ }
+
+ .contenido-area img {
+    width: 310px;
+    border-radius: 5px;
+    float: left;
+    text-align: right;
+    margin: 15px;
+
+ } 
 
 
 
