@@ -125,13 +125,27 @@
             <br> 
             <p style="text-align: justify;">Reserva una cita con uno de nuestros asesores de estudios o solicita más información por email.</p>
                    
-       <a class="boton_curso" target="_blank" href="#">Solicitar más información</a>
+       <!--<a class="boton_curso" target="_blank" href="#">Solicitar más información</a>-->
   
       </div>
+<form action="">
+  <div>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre"> 
+  </div>
+  <div>
+    <label for="correoelectronico">Correo electrónico</label>
+    <input type="text" id="correoelectronico"> 
+  </div>
+<input type="submit" onclick = 'enviarFormulario()' value="Enviar">
+
+</form>
          
         </div> 
         </div> 
 </main>
+
+
 
 <footer class="footer-area">
         <p class = >Elige el servicio que mejor se adapte a ti</p>
@@ -151,6 +165,6 @@
   </div>
 
   <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="js/validacion.js"></script>
 </body>
 </html>
