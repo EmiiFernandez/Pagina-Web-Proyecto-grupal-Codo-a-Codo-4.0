@@ -18,7 +18,7 @@
 
   <div class="contenedor-grid"> <!--CONTENEDORES HECHOS EN GRID-->
 
-    <header class="nav-area  fixed-top">
+    <header class="nav-area fixed-top">
       <!--BARRA DE NAVEGACIÓN SUPERIOR-->
         <div class="logo-area">
           <a href="./index.html"> <img src="./img/Logo.png" alt ="SEM-GROUP"> </a>  
@@ -28,7 +28,14 @@
             <ul>
               <li><a href="./index.html">INICIO</a></li>
               <li><a href="./quienes-somos.html">¿QUIÉNES SOMOS?</a></li>
-              <li><a href="./cursos.html">CURSOS</a></li>
+              <li><a href="#">CURSOS</a>
+              <ul class="menu-desplegable">
+                <li><a href="desarrollo-web.html">Desarrollo Web</a></li>
+                <li><a href="">Python</a></li>
+                <li><a href="">Diseño UX-UI</a></li>
+                <li><a href="">Metodologías Ágiles</a></li>
+              </ul>
+              </li>
               <li><a href="./contacto.html">CONTACTO</a></li>
             </ul>
         </div>
@@ -63,7 +70,9 @@
     <section class="portada-area">
       <h1>El momento justo para <span class="color-azul">aprender</span></h1>
       <p>Introducite en el mundo del desarrollo</p>
-      <a class="boton-cursos" href="#">Ver cursos</a>
+
+      <a class="boton-cursos" href="./cursos.html">Ver cursos</a>
+
     </section>
 
     <main class="main-area">
@@ -75,6 +84,7 @@
             <div class="card-cuerpo">
               <h5 class="card-titulo">Desarrollo Web</h5>
               <p class="card-texto">Podrás crear tu sitio web a partir de un prototipo y subirlo a un servidor. En este curso utilizaras HTML, CSS, JavaScript y herramientas que te ayudarán a mejorar tus práctias, como GIT, GitHub, bootstrap. </p>
+<<
               <a href="./desarrollo-web.html" class="btn btn-primary">Reserva tu lugar!</a>
             </div>
           </div>
@@ -93,7 +103,7 @@
             <div class="card-cuerpo">
               <h5 class="card-titulo">Diseño UX-UI</h5>
               <p class="card-texto">Aprenderás a transformar los deseos y necesidades de las personas en productos digitales que ofrezcan expriencias memorables.</p>
-              <a href="#" class="btn btn-primary">Reserva tu lugar!</a>
+              <a href="./curso_UX_UI.html" class="btn btn-primary">Reserva tu lugar!</a>
             </div>
         </div>
 
@@ -166,6 +176,7 @@
 
   </div>
 
+  <script src="/js/script.js"></script>
   <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>

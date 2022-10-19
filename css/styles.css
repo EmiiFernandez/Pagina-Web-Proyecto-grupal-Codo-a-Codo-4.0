@@ -67,6 +67,10 @@
   padding-bottom: 20px;
 }
 
+.portada-area {
+  grid-area: portada-area;
+}
+
 .main-area {
   display: grid; 
   grid-auto-rows: 1fr; 
@@ -208,6 +212,21 @@
   animation: aumentado 0.6s;
 }
 
+.navbar-area .menu-desplegable {
+  display: none;
+}
+
+.navbar-area .menu-desplegable  li a{
+  line-height: 50px;
+}
+
+.navbar-area ul li a:hover + ul{
+  display: block;
+}
+
+.navbar-area .menu-desplegable:hover {
+  display: block;
+}
 
 .redes-area {
   align-self: center;
@@ -244,6 +263,9 @@
 }
 
 
+/* Portada */
+
+
 .portada-area {
   height: calc(100vh);
   background: linear-gradient(
@@ -256,7 +278,9 @@
   justify-content: center;
   background-size: cover;
 
+
   grid-area: portada-area;
+
   color: white;
 }
 
@@ -606,7 +630,7 @@ text-decoration: none;
     display: grid; 
   grid-auto-rows: 1fr; 
   grid-template-columns: 1fr; 
-  grid-template-rows: 0fr 0fr 0.5fr 0.5fr 0.4fr 0.3fr; 
+  grid-template-rows: 0fr 0fr 0.5fr 0.5fr 0.4fr 0.3fr;
   gap: 0px 0px; 
   grid-template-areas: 
     "nav-area"
@@ -614,7 +638,7 @@ text-decoration: none;
     "main-area"
     "section-area"
     "form-area"
-    "footer-area"; 
+    "footer-area";
 }
 
 .nav-area {
