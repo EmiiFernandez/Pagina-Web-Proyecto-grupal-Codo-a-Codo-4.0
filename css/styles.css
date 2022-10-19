@@ -31,6 +31,10 @@
 
 }
 
+.responsive-area {
+  display: none;
+}
+
 .nav-area {  
   display: grid; 
   grid-template-columns: 1fr; 
@@ -53,10 +57,6 @@
 
 .redes-area { 
   grid-area: redes-area; 
-}
-
-.responsive-area {
-  display: none;
 }
 
 .fixed-top img{
@@ -196,6 +196,22 @@
 .navbar-area a:hover {
   color: #8d8d8d;
   animation: aumentado 0.6s;
+}
+
+.navbar-area .menu-desplegable {
+  display: none;
+}
+
+.navbar-area .menu-desplegable  li a{
+  line-height: 50px;
+}
+
+.navbar-area ul li a:hover + ul{
+  display: block;
+}
+
+.navbar-area .menu-desplegable:hover {
+  display: block;
 }
 
 .redes-area {
