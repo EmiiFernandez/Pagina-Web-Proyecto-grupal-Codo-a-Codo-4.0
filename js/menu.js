@@ -1,0 +1,17 @@
+//Configuración menu hamburguesa
+const ham = document.querySelector('.ham');
+const enlaces = document.querySelector('.enlaces-menu');
+const barras = document.querySelectorAll('.ham span');
+
+ham.addEventListener('click', () => {
+    enlaces.classList.toggle('activado');
+    barras.forEach(child => {child.classList.toggle('animado')});
+    ham.classList.toggle('girar');
+});
+
+//Configuración Bootstrap para desplegable
+const dropdownElementList = document.querySelectorAll('.dropdown-toggle')
+const dropdownList = [...dropdownElementList].map(dropdownToggleEl => new bootstrap.Dropdown(dropdownToggleEl));
+
+
+
