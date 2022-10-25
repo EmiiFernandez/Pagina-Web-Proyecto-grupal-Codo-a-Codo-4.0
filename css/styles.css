@@ -17,7 +17,7 @@
 .c-grid {  
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.4fr; 
+    grid-template-rows: 0fr 0.5fr 0.5fr 0.5fr 0.5fr 0.4fr; 
     gap: 0px 0px; 
     grid-template-areas: 
       "c-grid-nav c-grid-nav c-grid-nav"
@@ -134,7 +134,8 @@
   }
   
   .btn {
-  
+    font-size: 1.3rem !important;
+    font-weight: 500 !important;
     border: none;
     color: var(--color-headerFooter) !important;
   }
@@ -247,7 +248,7 @@
     height: 100% !important;
 }
 
- .c-card1, .c-card2, .c-card3, .c-card4, .card {
+ .c-card1, .c-card2, .c-card3, .c-card4, .card, .c-grid-section, .c-section1, .c-section2{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -293,6 +294,14 @@
     border: var(--border-cards-section);
     background-color: var(--background-color-main);
     }
+
+  .c-section1 {
+    margin-bottom: 10px;
+  }
+
+  .c-section2 {
+    margin-top: 10px;
+  }
 
     .videoYoutube {
     width: 90%;
