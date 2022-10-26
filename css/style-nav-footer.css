@@ -203,8 +203,9 @@ footer {
 
 @media (max-width:1400px) {
     body{
-      overflow:hidden;
+      overflow: hidden;
     }
+    
       .ham{
           display:block;
           cursor:pointer;
