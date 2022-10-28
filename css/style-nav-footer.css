@@ -202,9 +202,6 @@ footer {
   /* DISPOSITIVOS MOVILES */
 
 @media (max-width:1400px) {
-    body{
-      overflow: hidden;
-    }
     
       .ham{
           display:block;
