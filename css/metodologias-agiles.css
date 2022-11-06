@@ -225,7 +225,7 @@
 
 .portada-area {
     height: calc(100vh);
-    background-image: url(../img/diseño-ux-ui.png);
+    background-image: url(../img/metodologias-agiles.png);
     display: flex;
     flex-direction: column;
     text-align: left;

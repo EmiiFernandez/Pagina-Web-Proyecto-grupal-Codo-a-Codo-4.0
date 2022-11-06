@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Passions+Conflict&family=Roboto:ital,wght@0,100;0,300;1,100&family=Source+Code+Pro:wght@200;900&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -19,7 +21,7 @@
     display: grid; 
     grid-auto-rows: 1fr; 
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0fr 0fr 0.6fr 0.6fr 0.2fr;
+    grid-template-rows: 0fr 0fr 0fr 0fr 0fr;
     gap: 0px 0px; 
     grid-template-areas: 
     "nav-area nav-area"
@@ -73,7 +75,7 @@
 .main-area {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 0fr; 
+    grid-template-rows: 0fr 0fr; 
     gap: 0px 0px; 
     grid-template-areas: 
     "card0 card1"
@@ -95,17 +97,37 @@
 
 .section-area {
     display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.9fr 1fr 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
-    "section0 section1"
+    "section0 section0"
+    "section1 section1"
     "section2 section2"; 
     grid-area: section-area;
 }
 
 .section0 {
     grid-area: section0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0fr 0fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "columna0 columna1";
+}
+
+.titulo {
+    grid-area: titulo;
+}
+
+.columna0 {
+    grid-area: columna0;
+}
+
+.columna1 {
+    grid-area: columna1;
 }
 
 .section1 {
@@ -246,46 +268,162 @@
 
 /* MAIN */
 
-.card0, .card1, .card2{
+.card0, .card1{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
 }
 
-.card0, .card1 {
-    padding-left: 4rem;
-    padding-right: 4rem;
+.card0, .card1{
+    padding: 2.7rem 4rem 0 4rem;
 }
 
-.card0 h2, .card1 h2 {
+.card0 h2, .card1 h2, .card2 h2{
     font-size: 2rem;
     color: #170d71;
 }
 
-.card0 p, .card1 p{
+.card0 p, .card1 p {
     font-size: 1.2rem;
 }
 
-.card2 h2 {
-    margin: auto;
+.card1 ul li {
+    font-size: 1.2rem;
 }
 
+.card2 {
+    height: 20rem;
+    padding-top: 1rem;
+}
+
+.card2 h2 {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+.contenido-card2 {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.contenido-card2 img {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 15px black;
+    margin: auto;
+}
 
 /* SECTION */
 
-.section0, .section1, .section2 {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
+.section0 {
+    background-color: var(--background-color-headerFooter);
+    color: #ebebeb;
 }
 
-.section0, .section1 {
+.titulo {
+    font-size: 3.2rem;
+    padding: 3rem 0 2rem 4rem;
+}
+
+.columna0 p, .columna1 p {
+    font-size: 1.2rem;
+    padding: .3rem;
+}
+
+.columna0 {
     padding-left: 4rem;
-    padding-right: 4rem;
+}
+
+.section1 h2 {
+    font-size: 3.2rem;
+    padding: 2rem 0 2rem 4rem;
+}
+
+.fechas {
+    padding-left: 4rem;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.7rem;
+    color: black;
+}
+
+.fecha-item {
+    border: 3px solid var(--background-color-headerFooter);
+    padding: 0.7rem;
+    width: 14rem;
+    height: 15rem;
+}
+
+.fecha-item a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.boton-fechas {
+    display: block;
+    background-color: var(--background-color-headerFooter);
+    margin-top: 10px;
+    width: 100%;
+    font-size: 1.3rem;
+    color: white;
 }
 
 .section2 h2 {
-    margin: auto;
+    font-size: 3.2rem;
+    padding: 2rem 0 2rem 3.5rem;
+}
+
+.precios {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.precio-item {
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 0.7rem;
+    width: 30rem;
+    height: 25rem;
+    background-color: var(--color-headerFooter);
+    box-shadow: 15px -16px 15px #183884c2;
+}
+
+.precio-item a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.precio-item h3 {
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: .5rem 0 1rem 0;
+}
+
+.precio-item ul li {
+    font-size: 1.3rem;
+}
+
+.precio-item p {
+    padding-left: .5rem;
+    font-size: 1.7rem;
+}
+
+.color-azul {
+    text-align: center;
+    color: var(--background-color-headerFooter);
+}
+
+.boton-precios {
+    display: block;
+    background-color: var(--background-color-headerFooter);
+    margin-top: 10px;
+    padding: 5px 0;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    color: white;
 }
 
 /* FOOTER */
@@ -295,7 +433,7 @@
     flex-direction: column;
     background-color: var(--background-color-headerFooter);
     justify-content: space-evenly;
-    padding-top: 1em;
+    padding-top: 1rem;
 }
 
 .footer-area p {
@@ -331,4 +469,582 @@
 .footer-area i:hover {
     color: #8d8d8d;
     animation: aumentado 0.6s;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+    .contenedor-grid {
+        display: grid; 
+        grid-auto-rows: 1fr; 
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 0fr 0fr 0fr 0fr;
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "nav-area"
+        "portada-area"
+        "main-area"
+        "section-area"
+        "footer-area"; 
+    }
+
+    .main-area {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 0fr 0fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "card0 card1"
+        "card2 card2"; 
+        grid-area: main-area; 
+    }
+    
+    .card0 { grid-area: card0; }
+    
+    .card1 { grid-area: card1; }
+    
+    .card2 { grid-area: card2; }
+
+    .nav-area {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-area: nav-area; 
+    }
+
+    .nav-responsive-area { grid-area: 1 / 1 / 2 / 2; }
+    .burguer-res-area { grid-area: 1 / 1 / 2 / 2; }
+    .logo-res-area { grid-area: 1 / 2 / 2 / 3; }
+    .carrito-res-area { grid-area: 1 / 3 / 2 / 4; }
+
+    .section-area {
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.7fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "section0 section0"
+        "section1 section1"
+        "section2 section2"; 
+        grid-area: section-area;
+    }
+    
+    .section0 {
+        grid-area: section0;
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0fr 0fr;
+        grid-template-areas: 
+        "titulo titulo"
+        "columna0 columna1";
+    }
+    
+    .titulo { grid-area: titulo; }
+    
+    .columna0 { grid-area: columna0; }
+    
+    .columna1 { grid-area: columna1; }
+    
+    .section1 { grid-area: section1; }
+    
+    .section2 { grid-area: section2; }
+
+    .footer-area { grid-area: footer-area; }  
+
+    /* FIN GRID */
+
+    .portada-area p {
+        font-size: 2rem;
+    }
+
+    .portada-area h1 {
+        font-size: 3rem;
+    }
+
+    .portada-area ul li {
+        font-size: 1.1rem;
+    }
+
+    .boton-cursos {
+        width: 180px;
+        /* margin-top: 10px; */
+        /* padding: 0px 0; */
+        font-size: 1.3rem;
+    }
+
+    .card0, .card1{
+        padding: 0 .4rem 0 1.1rem;
+    }
+    
+    .card0 h2, .card1 h2, .card2 h2{
+        font-size: 1.4rem;
+    }
+    
+    .card0 p, .card1 p {
+        font-size: .9rem;
+    }
+    
+    .card1 ul li {
+        font-size: .9rem;
+        padding-bottom: .7rem;
+    }
+
+    .card2 {
+        height: 20rem;
+        padding-top: .5rem;
+    }
+
+    .card2 h2 {
+        padding-bottom: 1.7rem;
+    }
+
+    .contenido-card2 {
+        gap: .5rem .2rem;
+    }
+
+    .contenido-card2 img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .titulo {
+        font-size: 2.5rem;
+        padding: 3rem .4rem 1.3rem 1.1rem;
+    }
+
+    .columna0 p, .columna1 p {
+        font-size: .8rem;
+        padding: .2rem;
+    }
+
+    .columna0 {
+        padding-left: 1.1rem;
+    }
+
+    .section1 h2 {
+        font-size: 2.5rem;
+        padding: 3rem .4rem 1.3rem 1.1rem;
+    }
+
+    .fechas {
+        padding-left: 2rem;
+        gap: 0.7rem;
+    }
+    
+    .fecha-item {
+        padding: 0.4rem;
+        width: 11rem;
+        height: 12rem;
+    }
+
+    .fecha-item p {
+        font-size: .8rem;
+    }
+
+    .section2 h2 {
+        font-size: 2.5rem;
+        padding: 3rem .4rem 1.3rem 1.1rem;
+    }
+    
+    .precios {
+        gap: 1rem;
+        padding-bottom: 4rem;
+    }
+
+    .precio-item {
+        width: 26rem;
+        height: 26rem;
+    }
+
+    .precio-item h3 {
+        font-size: 1.8rem;
+    }
+
+    .precio-item ul li {
+        font-size: 1.3rem;
+    }
+    
+    .precio-item p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:600px) {
+    .contenedor-grid {
+        display: grid; 
+        /* grid-auto-rows: 1fr; */ 
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 0fr 0fr 0fr 0fr 0fr;
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "nav-area"
+        "portada-area"
+        "main-area"
+        "main-area"
+        "section-area"
+        "footer-area"; 
+    }
+
+    .main-area {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "card0"
+        "card1"
+        "card2"
+        "card2"; 
+        grid-area: main-area; 
+    }
+    
+    .card0 { grid-area: card0; }
+    
+    .card1 { grid-area: card1; }
+    
+    .card2 { grid-area: card2; }
+
+    .nav-area {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-area: nav-area; 
+    }
+    .nav-responsive-area { grid-area: 1 / 1 / 2 / 2; }
+    .burguer-res-area { grid-area: 1 / 1 / 2 / 2; }
+    .logo-res-area { grid-area: 1 / 2 / 2 / 3; }
+    .carrito-res-area { grid-area: 1 / 3 / 2 / 4; }
+
+    .section-area {
+        display: grid; 
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.7fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "section0"
+        "section1"
+        "section2"; 
+        grid-area: section-area;
+    }
+    
+    .section0 {
+        grid-area: section0;
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 0fr 0fr;
+        grid-template-areas: 
+        "titulo"
+        "columna0"
+        "columna1";
+    }
+    
+    .titulo { grid-area: titulo; }
+    
+    .columna0 { grid-area: columna0; }
+    
+    .columna1 { grid-area: columna1; }
+    
+    .section1 { grid-area: section1; }
+    
+    .section2 { grid-area: section2; }
+
+    /* FIN GRID */
+
+    .portada-area p {
+        font-size: 2rem;
+    }
+
+    .portada-area h1 {
+        font-size: 3rem;
+    }
+
+    .portada-area ul li {
+        font-size: 1.1rem;
+    }
+
+    .boton-cursos {
+        width: 180px;
+        font-size: 1.3rem;
+    }
+
+    .card0, .card1{
+        padding: 0 .4rem 0 1.1rem;
+    }
+    
+    .card0 h2, .card1 h2, .card2 h2{
+        font-size: 1.4rem;
+    }
+    
+    .card0 p, .card1 p {
+        font-size: .9rem;
+    }
+    
+    .card1 ul li {
+        font-size: .9rem;
+        padding-bottom: .7rem;
+    }
+
+    .card2 {
+        height: 20rem;
+        padding-top: .5rem;
+    }
+
+    .card2 h2 {
+        padding-bottom: 1.7rem;
+    }
+
+    .contenido-card2 {
+        gap: .5rem .2rem;
+    }
+
+    .contenido-card2 img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .titulo {
+        font-size: 2.5rem;
+        padding: 3rem .4rem 1.3rem 1.1rem;
+    }
+
+    .columna0 p, .columna1 p {
+        font-size: .8rem;
+        padding: .2rem;
+    }
+
+    .columna0 {
+        padding-left: 1.1rem;
+    }
+
+    .section1 h2 {
+        font-size: 2.5rem;
+        padding: 3rem .4rem 1.3rem 1.1rem;
+    }
+
+    .fechas {
+        padding-left: 2rem;
+        gap: 0.7rem;
+    }
+    
+    .fecha-item {
+        padding: 0.4rem;
+        width: 11rem;
+        height: 12rem;
+    }
+
+    .fecha-item p {
+        font-size: .8rem;
+    }
+
+    .section2 h2 {
+        font-size: 2.5rem;
+        padding: 3rem .4rem 1.3rem 1.1rem;
+    }
+    
+    .precios {
+        gap: 1rem;
+        padding-bottom: 4rem;
+    }
+
+    .precio-item {
+        width: 26rem;
+        height: 26rem;
+    }
+
+    .precio-item h3 {
+        font-size: 1.8rem;
+    }
+
+    .precio-item ul li {
+        font-size: 1.3rem;
+    }
+    
+    .precio-item p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:600px) {
+    .contenedor-grid {
+        display: grid; 
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 0fr 0fr 0fr 0fr;
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "nav-area"
+        "portada-area"
+        "main-area"
+        "section-area"
+        "footer-area"; 
+    }
+
+    .main-area {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 0fr 0fr 0fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "card0"
+        "card1"
+        "card2"; 
+        grid-area: main-area; 
+    }
+    
+    .card0 { grid-area: card0; }
+    
+    .card1 { grid-area: card1; }
+    
+    .card2 { grid-area: card2; }
+
+    .nav-area {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-area: nav-area; 
+    }
+    .nav-responsive-area { grid-area: 1 / 1 / 2 / 2; }
+    .burguer-res-area { grid-area: 1 / 1 / 2 / 2; }
+    .logo-res-area { grid-area: 1 / 2 / 2 / 3; }
+    .carrito-res-area { grid-area: 1 / 3 / 2 / 4; }
+
+    .section-area {
+        display: grid; 
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.7fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "section0"
+        "section1"
+        "section2"; 
+        grid-area: section-area;
+    }
+    
+    .section0 {
+        grid-area: section0;
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 0fr 0fr;
+        grid-template-areas: 
+        "titulo"
+        "columna0"
+        "columna1";
+    }
+    
+    .titulo { grid-area: titulo; }
+    
+    .columna0 { grid-area: columna0; }
+    
+    .columna1 { grid-area: columna1; }
+    
+    .section1 { grid-area: section1; }
+    
+    .section2 { grid-area: section2; }
+
+    /* FIN GRID */
+
+    .portada-area {
+        text-align: left;
+        padding-left: 2rem;
+        justify-content: center;
+        background-size: cover;
+    }
+
+    .portada-area p {
+        font-size: 2rem;
+        padding-top: 2rem;
+    }
+
+    .portada-area h1 {
+        font-size: 3rem;
+    }
+
+    .portada-area ul li {
+        font-size: 1.1rem;
+    }
+
+    .boton-cursos {
+        width: 150px;
+        font-size: 1.2rem;
+    }
+
+    .card0 h2, .card1 h2, .card2 h2{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .card0 p, .card1 ul li {
+        font-size: 1.3rem;
+        padding: .2rem .2rem 0 .9rem;
+    }
+
+    .card2 {
+        height: 20rem;
+        padding-top: .5rem;
+    }
+
+    .contenido-card2 {
+        gap: .5rem .5rem;
+    }
+
+    .contenido-card2 img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .titulo {
+        font-size: 2rem;
+        padding: 3rem 0 1.3rem 0;
+        text-align: center;
+    }
+
+    .columna0, .columna1 {
+        text-align: center;
+    }
+
+    .columna0 p, .columna1 p {
+        font-size: 1rem;
+    }
+
+    .section1 h2 {
+        font-size: 2rem;
+        padding: 3rem 0 1.3rem 0;
+        text-align: center;
+    }
+
+    .fechas {
+        margin: auto;
+        gap: 0.7rem;
+    }
+    
+    .fecha-item {
+        padding: 0.4rem;
+        width: 13rem;
+        height: 13.5rem;
+    }
+
+    .fecha-item p {
+        font-size: 1rem;
+    }
+
+    .section2 h2 {
+        font-size: 2rem;
+        padding: 3rem 0 1.5rem 0;
+        text-align: center;
+    }
+    
+    .precios {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .precio-item {
+        width: 19rem;
+        height: 24rem;
+    }
 }
