@@ -1,22 +1,25 @@
-let nombre = document.getElementById('nombre');
-let correoelectronico = document.getElementById('correo electronico');
-let error = document.getElementById('error');
-error.style.color = 'red';
 
-function  enviarFormulario(){
-   console.log('Enviando formulario...'); 
- let mensajesError = [];
+function validarInformacion() {
+   let nombre = document.getElementById('nombre');
+   let correoelectronico = document.getElementById('correo electronico');
 
- if(nombre.value === null || exampleFormControlInput1.value === ''){
-    mensajesError.push('Ingresa tu nombre');
- }
+   console.log('Enviando formulario...');
 
- if(correoelectronico.value === null || exampleFormControlInput1.value === ''){
-    mensajesError.push('Ingresa tu correo electronico');
- }
+   let errores = [];
 
- error.innerHTML = mensajesError.join(', ');
-    return false;
+   if(nombre.length < 3){
+       errores.push("El nombre debe tener al menos 3 caracteres.")
+   }
 
+   if(nombre == "" || nombre == null){
+      errores.push("El nombre debe tener al menos 3 caracteres.")
+  }
+
+   if(correoelectronico == "" || correoelectronico == null){
+       errores.push("Ingresar un correo electrónico")
+   }
+
+   return errores;
 }
-    
+
+validarInformacion(); 
