@@ -280,8 +280,14 @@
 
   /*SECCIONES*/
 .c-grid-section p {
-    padding-top: 80px;
+  font-size: 20px;
+    padding-top: 50px;
     padding-bottom: 80px;
+}
+
+.c-grid-section h3 {
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 .c-section1, .c-section2 {

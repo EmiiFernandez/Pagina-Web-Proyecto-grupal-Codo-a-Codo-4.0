@@ -230,15 +230,7 @@
   animation: aumentado 0.6s;
 }
 
-/*Animaciones*/
-@keyframes aumentado  {
-  /*redes sociales*/  
-      0% {}
-      25%{transform: scale(1.0),}
-      50%{transform: scale(1.1);}	
-      75%{transform: scale(1.1);}
-      100%{transform: scale(1.0);}
-  }
+
 
   /*Responsive*/
 
@@ -379,3 +371,4 @@
     }
   }
 }
+
