@@ -21,7 +21,7 @@
 .c-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0fr 0.5fr 0.5fr 0.5fr 0.5fr 0.4fr;
+  grid-template-rows: 0fr 0fr 0.5fr 0.5fr 0.5fr 0.4fr;
   gap: 0px 0px;
   grid-template-areas:
     "c-grid-nav c-grid-nav c-grid-nav"
@@ -39,7 +39,7 @@
 
 .c-grid-portada {
   grid-area: c-grid-portada;
-  background-color: gray;
+  background-color: blueviolet;
 }
 
 .c-grid-main {
