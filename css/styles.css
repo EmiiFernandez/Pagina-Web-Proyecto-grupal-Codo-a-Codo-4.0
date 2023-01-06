@@ -463,7 +463,7 @@ footer {
 
 
 /* Responsive */
-@media (max-width:1500px), (min-width:699px) {
+@media (max-width:1500px) {
   .card {
     margin: 0 !important;
   }
@@ -491,7 +491,7 @@ footer {
   }
 }
 
-@media (min-width:576px), (max-width:700px ) {
+@media (max-width:850px ) {
   .c-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -657,10 +657,30 @@ footer {
   }
 }
 
-@media (max-width:575) {
+@media (max-width: 575px) {
   .c-grid-contacto {
     grid-area: c-grid-contacto;
     width: 39em;
+  }
+
+  .formulario-area {
+    width: 20em;
+  }
+
+  .c-grid-contacto .btn-primary {
+    width: 15em;
+  }
+
+  .redes-footer ul {
+    flex-direction: column;
+  }
+
+  .redes-footer li {
+    padding-bottom: 1em;
+  }
+
+  .text-footer {
+    font-size: 20px;
   }
 }
 
